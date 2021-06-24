@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+ 
+}
+body{
+ background: linear-gradient(134deg, rgb(24, 24, 177), white, blue);
+}
+
+.links{
+  transition: .3s;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top:0;
+  right: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.fixed-nav{
+  background-color: white;
+  color: red;
+
+
+}
+.btn{
+  display: none;
+  transition: 2s;
+}
+
+.navBar a{
+  
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+}
+.nav-toggle{
+  
+  width: 40px;
+  height: 40px;
+  
+}
+#home{
+  
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#home h1{
+    font-size: 50px;
+    
+
+}
+#home p{
+  margin:0 12px;
+
+}
+
+button{
+  padding: 10px 29px;
+  background: transparent;
+}
+
+
+#about{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(241, 233, 233);
+}
+#services{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(247, 242, 242);
+}
+#tour{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(223, 219, 219);
+}
+
+
+h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+
+}
+
+span{
+  color: blue;
+}
+
+
+footer{
+  background-color: rgb(2, 2, 46);
+  height: 100px;
+  text-align: center;
+  
+  color: white;
+}
+footer p{
+  padding-top: 50px;
+}
+.arrowtop{
+  display: none;
+  }
+ .show{
+   display: block;
+   width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: blue;
+  animation: arrow .6s linear forwards infinite;
+
+ }
+@keyframes arrow{
+  0%{ transform: scale(.5)
+  }
+   100%{ transform: scale(.8)}
+
+  
+}
+
+
+@media all and (max-width:800px)
+{
+  
+  .links{
+    display: none;
+  }
+  .btn{
+    display: block;
+    border: 2px solid black;
+    position: fixed;
+    background-color:red;
+    top:10px;
+    right: 10px;
+    z-index: 12;
+  }
+  .tog{
+  
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: rgba(245, 235, 235, 0.5);
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    visibility: visible;
+   
+  }
+  
+  
+}
+
